@@ -104,7 +104,7 @@ footer {
     background-color: blueviolet;
     text-align: center;
     /* DEBUG */
-    height: 150px;
+    height: 100px;
     font-size: smaller;
     color: white;
 }
@@ -130,6 +130,10 @@ footer a {
 /* versione tablet */
 @media screen and (min-width:768px) {
 
+    header {
+        text-align: left;
+    }
+
     #info_ricetta h2 {
         /* font-size: 30px; */
         font-size: 1.5rem;
@@ -139,11 +143,38 @@ footer a {
         display: inline;
     }
 
+    .row {
+        width: 100%;
+        display: block;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .col_video {
+        height: 400px;
+    }
+
+    .col_info {
+        height: 150px;
+    }
+
+    .btn {
+        margin: 30px 20px;
+        border-radius: 30px;
+        padding: 10px 32px;
+    }
+
     #banner {
         display: block;
         /* debug */
-        background-color: green;
+        /* background-color: green; */
         height: 50px;
+        background-image: url(../img/banner.png);
+        background-size: cover;
     }
 
 
@@ -151,12 +182,19 @@ footer a {
         display: table;
         content: "";
         clear: both;
-
     }
 
     #presentation img {
         float: left;
         margin-right: 10px;
+    }
+
+    footer .row {
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 0 auto;
     }
 
 }
