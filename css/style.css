@@ -76,7 +76,15 @@ li {
 }
 
 #banner {
-    display: none;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    border-radius: 50%;
+    border: none;
+    background-color: white;
 }
 
 #presentation img {
